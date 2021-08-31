@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <!--font label-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,400&display=swap"
+        rel="stylesheet">
+</head>
+<body class="container--orange">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">CALCULADORAS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">FIGURAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./ahorro.html">AHORRO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./descuentos.html">DESCUENTOS</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <header class="centrar">
+        <h1 class="upper--h1">Porcentajes y descuentos</h1>
+    </header>
+          
+     
+    <form class="form--colorBlack">
+        <h2 class="bg--black">Calcula el precio a pagar de tus productos</h2>
+        <label for="inputPrice">Escribe el precio de tu producto</label>
+        <div class="diplay-flex">
+            <h2>$</h2>
+        <input type="number" id="inputPrice">
+        </div>
+
+        <label for="inputCoupon">Escribe el cupón de descuento para tu producto:</label>
+        <input type="text" id="inputCoupon">
+        <h3 id="porcentajeMensaje"></h3>
+
+        <button class="btn--verde" type="button" onclick="buttonDiscount()">Calcular el precio con descuento</button>
+        <p id="resultPrice"></p>
+    </form>
+    
+    <section class="centrar">
+        <p class="font--p">Cupones: cupon-15 | cupon-20 | cupon-25</p>
+    </section>
+
+
+
+    <script src="../js/descuentos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
